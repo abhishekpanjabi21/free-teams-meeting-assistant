@@ -1,0 +1,18 @@
+{
+  "name": "meeting-assistant",
+  "version": "0.3.0",
+  "description": "Personal Microsoft Teams meeting assistant: import transcripts, get Claude-powered sales insights, browse past meetings. Runs locally on your Mac.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "setup": "node scripts/setup.js",
+    "autostart": "node scripts/autostart.js on",
+    "autostart:off": "node scripts/autostart.js off",
+    "autostart:status": "node scripts/autostart.js status",
+    "test": "node scripts/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

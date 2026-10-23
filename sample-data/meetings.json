@@ -1,0 +1,252 @@
+[
+  {
+    "id": "sample-northwind-discovery",
+    "sample": true,
+    "title": "Discovery call",
+    "account": "Northwind Logistics",
+    "date": "2026-10-21T04:30:00.000Z",
+    "durationMin": 34,
+    "participants": [
+      { "name": "Rohan Mehta", "role": "Account Executive", "side": "us" },
+      { "name": "Sarah Lin", "role": "VP Operations", "side": "customer" },
+      { "name": "David Okafor", "role": "IT Manager", "side": "customer" }
+    ],
+    "source": "sample",
+    "status": "processed",
+    "transcript": [
+      { "speaker": "Rohan Mehta", "start": 4, "text": "Thanks for making time, Sarah and David. My goal today is to understand how your dispatch team works right now and whether FlowDesk is even a fit. Sound good?" },
+      { "speaker": "Sarah Lin", "start": 15, "text": "Sounds good. Honestly the pain is that our dispatchers live in spreadsheets and email. When a shipment is delayed, it takes us half a day to tell the customer." },
+      { "speaker": "Rohan Mehta", "start": 31, "text": "Half a day. What does that cost you, roughly, when it happens?" },
+      { "speaker": "Sarah Lin", "start": 38, "text": "We lost two mid-size accounts last quarter and both cited communication. Together that was around four hundred thousand dollars a year." },
+      { "speaker": "David Okafor", "start": 55, "text": "From the IT side, my worry is integration. Everything runs through our TMS, and we've been burned by tools that promised an integration and then delivered a CSV export." },
+      { "speaker": "Rohan Mehta", "start": 72, "text": "Fair concern. We have a native connector for your TMS, and I can get you a call with our integration engineer so you can grill them directly." },
+      { "speaker": "David Okafor", "start": 86, "text": "That would help. I'd also need to see how you handle single sign-on with Microsoft." },
+      { "speaker": "Rohan Mehta", "start": 94, "text": "We support Microsoft Entra SSO out of the box. I'll include the setup guide in my follow-up." },
+      { "speaker": "Sarah Lin", "start": 108, "text": "Timing-wise, we want something live before peak season, which starts mid-February. So if we're doing this, a decision by early December." },
+      { "speaker": "Rohan Mehta", "start": 124, "text": "Who else would be involved in that decision besides you two?" },
+      { "speaker": "Sarah Lin", "start": 130, "text": "Our CFO, Mark, signs anything over fifty thousand. He'll want to see the ROI case. And we're also looking at one other vendor." },
+      { "speaker": "Rohan Mehta", "start": 146, "text": "Understood. Would it be useful if I built the ROI case using the lost-account numbers you just shared?" },
+      { "speaker": "Sarah Lin", "start": 156, "text": "Yes, that would actually make my life easier with Mark. Can you also show us a demo with real delay scenarios?" },
+      { "speaker": "Rohan Mehta", "start": 168, "text": "Absolutely. Let's book a demo for next Tuesday, and I'll send the ROI draft and the SSO guide by Friday." },
+      { "speaker": "David Okafor", "start": 2010, "text": "Works for me. Send the integration engineer's availability too." }
+    ],
+    "insights": {
+      "summary": "Rohan ran a discovery call with Sarah Lin (VP Operations) and David Okafor (IT Manager) at Northwind Logistics. Their dispatch team relies on spreadsheets and email, which delays customer updates and contributed to losing two accounts worth about $400K a year. They want a solution live before peak season in mid-February, so a decision is needed by early December. Next step is a demo next Tuesday plus an ROI case for their CFO.",
+      "keyPoints": [
+        "Dispatchers work in spreadsheets and email; delay notifications take up to half a day.",
+        "Two mid-size accounts (about $400K/year combined) were lost last quarter over communication.",
+        "IT requires a real TMS integration and Microsoft Entra SSO.",
+        "The CFO approves anything over $50K and will want an ROI case.",
+        "Northwind is evaluating one other vendor."
+      ],
+      "actionItems": [
+        { "task": "Send ROI draft built on the lost-account numbers", "owner": "Rohan Mehta", "due": "Friday", "done": false },
+        { "task": "Send Microsoft Entra SSO setup guide", "owner": "Rohan Mehta", "due": "Friday", "done": true },
+        { "task": "Share integration engineer's availability for a technical call", "owner": "Rohan Mehta", "due": "Friday", "done": false },
+        { "task": "Prepare demo with real shipment-delay scenarios", "owner": "Rohan Mehta", "due": "Next Tuesday", "done": false }
+      ],
+      "salesInsights": [
+        "Clear, quantified pain: about $400K/year in lost revenue tied to slow customer communication.",
+        "Hard deadline: live before mid-February peak season, so decision by early December.",
+        "Economic buyer is the CFO (Mark), not yet engaged; Sarah is a likely champion.",
+        "David (IT) is a technical gatekeeper; integration quality will decide his vote.",
+        "Competitive deal: one other vendor is being evaluated."
+      ],
+      "objections": [
+        { "objection": "Past tools promised TMS integration but only delivered CSV exports.", "response": "Offered a native TMS connector and a direct call with the integration engineer.", "status": "addressed" },
+        { "objection": "Needs Microsoft SSO support.", "response": "Confirmed Entra SSO support; setup guide promised by Friday.", "status": "addressed" },
+        { "objection": "CFO will need a clear ROI case for anything over $50K.", "response": "Build the ROI case from the lost-account figures and offer to present it to Mark.", "status": "open" }
+      ],
+      "buyingSignals": [
+        { "signal": "Sarah asked for a demo with real delay scenarios.", "strength": "strong" },
+        { "signal": "Defined timeline: decision by early December.", "strength": "strong" },
+        { "signal": "Sarah said the ROI case would make her life easier with the CFO.", "strength": "moderate" }
+      ],
+      "nextSteps": [
+        "Demo next Tuesday focused on delay scenarios.",
+        "Send ROI draft, SSO guide and engineer availability by Friday.",
+        "Ask Sarah for a short intro to the CFO before the proposal stage.",
+        "Find out who the competing vendor is."
+      ],
+      "dealStage": "Discovery",
+      "sentiment": { "score": 74, "label": "Positive", "reason": "Strong, quantified pain and a clear deadline, with IT concerns that look solvable." },
+      "followUpEmail": {
+        "subject": "Northwind + FlowDesk: next steps from today",
+        "body": "Hi Sarah and David,\n\nThanks for the open conversation today. Here is what I heard: delays currently take up to half a day to reach customers, which contributed to losing two accounts last quarter, and you want something live before mid-February.\n\nBy Friday I'll send:\n- A draft ROI case using the numbers you shared\n- Our Microsoft Entra SSO setup guide\n- Our integration engineer's availability for a technical call\n\nOur demo is booked for next Tuesday, and I'll build it around real delay scenarios.\n\nBest,\nRohan"
+      }
+    },
+    "createdAt": "2026-10-21T05:10:00.000Z",
+    "processedAt": "2026-10-21T05:12:00.000Z"
+  },
+  {
+    "id": "sample-brightline-pricing",
+    "sample": true,
+    "title": "Pricing & proposal review",
+    "account": "Brightline Retail",
+    "date": "2026-10-19T09:00:00.000Z",
+    "durationMin": 41,
+    "participants": [
+      { "name": "Rohan Mehta", "role": "Account Executive", "side": "us" },
+      { "name": "Ananya Iyer", "role": "Head of Customer Experience", "side": "customer" },
+      { "name": "Tom Becker", "role": "Procurement Lead", "side": "customer" }
+    ],
+    "source": "sample",
+    "status": "processed",
+    "transcript": [
+      { "speaker": "Rohan Mehta", "start": 6, "text": "I wanted to walk through the proposal and hear your reactions, especially on pricing." },
+      { "speaker": "Tom Becker", "start": 14, "text": "I'll be direct. The number is about twenty percent above what we budgeted. Is there flexibility?" },
+      { "speaker": "Rohan Mehta", "start": 26, "text": "Thanks for being direct. Can I ask what the budget was based on?" },
+      { "speaker": "Tom Becker", "start": 33, "text": "Last year's spend on our current tool, plus ten percent." },
+      { "speaker": "Ananya Iyer", "start": 41, "text": "To be fair, the current tool doesn't do the automated routing, and that's the main reason we're here. My team spends hours a day on manual triage." },
+      { "speaker": "Rohan Mehta", "start": 58, "text": "One option is a two-year term, which brings the annual price down by about twelve percent. Another is starting with the core plan and adding routing in Q2." },
+      { "speaker": "Tom Becker", "start": 75, "text": "The two-year option is interesting. I'd need legal to review the auto-renewal clause though, that's been a problem with other vendors." },
+      { "speaker": "Rohan Mehta", "start": 88, "text": "Understood. I can send our standard terms today and flag that auto-renewal can be changed to opt-in." },
+      { "speaker": "Ananya Iyer", "start": 101, "text": "If we can get the two-year price, I'm comfortable taking this to our COO. She asked me to have a recommendation by the end of the month." },
+      { "speaker": "Rohan Mehta", "start": 116, "text": "Great. I'll send a revised proposal with the two-year option by Wednesday so you have time before month end." },
+      { "speaker": "Tom Becker", "start": 2380, "text": "Include a breakdown by line item, please. It makes the internal approval faster." }
+    ],
+    "insights": {
+      "summary": "Rohan reviewed the proposal with Ananya Iyer (Head of CX) and Tom Becker (Procurement) at Brightline Retail. Procurement said the price is about 20% over budget, which was set from last year's spend plus 10%. Ananya reinforced that automated routing is the main reason for the change. A two-year term (about 12% lower annually) landed well, subject to legal reviewing the auto-renewal clause. Ananya plans to recommend to the COO by month end.",
+      "keyPoints": [
+        "Proposal is about 20% above budget; budget was last year's tool spend plus 10%.",
+        "Automated routing is the core value; CX team spends hours a day on manual triage.",
+        "Two-year term reduces annual price by about 12%; Tom found it interesting.",
+        "Legal must review the auto-renewal clause.",
+        "Ananya will take a recommendation to the COO by end of month."
+      ],
+      "actionItems": [
+        { "task": "Send revised proposal with two-year pricing option", "owner": "Rohan Mehta", "due": "Wednesday", "done": false },
+        { "task": "Add line-item price breakdown to the proposal", "owner": "Rohan Mehta", "due": "Wednesday", "done": false },
+        { "task": "Send standard terms with opt-in auto-renewal flagged", "owner": "Rohan Mehta", "due": "Today", "done": true },
+        { "task": "Get legal review of the auto-renewal clause", "owner": "Tom Becker", "due": "Not set", "done": false }
+      ],
+      "salesInsights": [
+        "Budget anchored to the old tool, not to the value of routing; reframe around hours saved.",
+        "Ananya is the champion and has a COO deadline at month end.",
+        "Procurement responds to term length and structure more than headline discounts.",
+        "Auto-renewal is a known sensitivity from past vendors."
+      ],
+      "objections": [
+        { "objection": "Price is about 20% above budget.", "response": "Offered a two-year term (about 12% lower annually) or a phased start with routing added in Q2.", "status": "open" },
+        { "objection": "Concern about auto-renewal clauses.", "response": "Offered to change auto-renewal to opt-in and send standard terms today.", "status": "addressed" }
+      ],
+      "buyingSignals": [
+        { "signal": "Ananya is comfortable taking it to the COO if two-year pricing is approved.", "strength": "strong" },
+        { "signal": "Tom asked for a line-item breakdown to speed internal approval.", "strength": "strong" },
+        { "signal": "Tom called the two-year option interesting.", "strength": "moderate" }
+      ],
+      "nextSteps": [
+        "Revised proposal with two-year option and line items by Wednesday.",
+        "Quantify the hours saved on manual triage to close the remaining budget gap.",
+        "Offer to support Ananya's COO recommendation with a one-page summary."
+      ],
+      "dealStage": "Negotiation",
+      "sentiment": { "score": 68, "label": "Cautiously positive", "reason": "Price gap remains, but both stakeholders are actively working toward approval." },
+      "followUpEmail": {
+        "subject": "Brightline: revised proposal coming Wednesday",
+        "body": "Hi Ananya and Tom,\n\nThanks for the candid discussion on pricing. As agreed, I'll send a revised proposal by Wednesday with:\n- The two-year option (about 12% lower per year)\n- A line-item breakdown for internal approval\n\nI've also sent our standard terms with the auto-renewal clause flagged as opt-in for your legal team.\n\nAnanya, happy to put together a one-page summary for your COO if useful.\n\nBest,\nRohan"
+      }
+    },
+    "createdAt": "2026-10-19T09:50:00.000Z",
+    "processedAt": "2026-10-19T09:52:00.000Z"
+  },
+  {
+    "id": "sample-kestrel-demo",
+    "sample": true,
+    "title": "Product demo",
+    "account": "Kestrel Health",
+    "date": "2026-10-15T08:30:00.000Z",
+    "durationMin": 48,
+    "participants": [
+      { "name": "Rohan Mehta", "role": "Account Executive", "side": "us" },
+      { "name": "Meera Kapoor", "role": "Solutions Engineer", "side": "us" },
+      { "name": "Dr. James Wright", "role": "Director of Patient Services", "side": "customer" },
+      { "name": "Lena Fischer", "role": "Security & Compliance", "side": "customer" }
+    ],
+    "source": "sample",
+    "status": "processed",
+    "transcript": [
+      { "speaker": "Rohan Mehta", "start": 5, "text": "Today Meera will show the patient-request workflow you described last week, end to end." },
+      { "speaker": "Meera Kapoor", "start": 14, "text": "Here's a request coming in from the portal. It's tagged as urgent automatically and routed to the on-call coordinator." },
+      { "speaker": "Dr. James Wright", "start": 40, "text": "That's exactly the gap we have. Right now urgent requests sit in a shared inbox until someone notices." },
+      { "speaker": "Lena Fischer", "start": 58, "text": "Before I get excited, where is the data stored, and are you HIPAA compliant? We'd need a BAA." },
+      { "speaker": "Meera Kapoor", "start": 70, "text": "Data is stored in US regions, encrypted at rest and in transit, and we sign BAAs. Our SOC 2 Type II report is available under NDA." },
+      { "speaker": "Lena Fischer", "start": 88, "text": "Good. Send the SOC 2 and your standard BAA, and I'll need your answers on our security questionnaire. It's about 200 questions." },
+      { "speaker": "Rohan Mehta", "start": 104, "text": "We'll turn that around within a week. Meera, can you own the questionnaire?" },
+      { "speaker": "Meera Kapoor", "start": 110, "text": "Yes, I'll take it." },
+      { "speaker": "Dr. James Wright", "start": 122, "text": "How quickly could we pilot this with one clinic? I'd like to start with our downtown location." },
+      { "speaker": "Rohan Mehta", "start": 133, "text": "A single-clinic pilot is usually live in three to four weeks once security sign-off is done." },
+      { "speaker": "Dr. James Wright", "start": 2870, "text": "Then let's get security moving. If the pilot works, we have eleven more clinics." }
+    ],
+    "insights": {
+      "summary": "Rohan and Meera demoed the patient-request workflow to Dr. James Wright (Patient Services) and Lena Fischer (Security & Compliance) at Kestrel Health. James saw it directly solve urgent requests sitting in a shared inbox and asked about a pilot at the downtown clinic. Lena requires a BAA, the SOC 2 report and a roughly 200-question security questionnaire before moving forward. A successful pilot could expand to eleven more clinics.",
+      "keyPoints": [
+        "Automatic urgent tagging and routing matched James's biggest gap.",
+        "Security needs: HIPAA, BAA, SOC 2 Type II, US data residency.",
+        "Security questionnaire of about 200 questions must be completed.",
+        "Pilot proposed at the downtown clinic; live in 3-4 weeks after security sign-off.",
+        "Expansion potential: eleven more clinics."
+      ],
+      "actionItems": [
+        { "task": "Complete Kestrel security questionnaire", "owner": "Meera Kapoor", "due": "Within a week", "done": false },
+        { "task": "Send SOC 2 Type II report (under NDA) and standard BAA", "owner": "Rohan Mehta", "due": "Not set", "done": true },
+        { "task": "Draft pilot plan for the downtown clinic", "owner": "Rohan Mehta", "due": "Not set", "done": false }
+      ],
+      "salesInsights": [
+        "James is a strong champion with a clear, painful use case.",
+        "Security review is the critical path; speed here directly controls deal velocity.",
+        "Land-and-expand: one clinic pilot, eleven clinics of upside."
+      ],
+      "objections": [
+        { "objection": "HIPAA compliance and data location.", "response": "US data regions, encryption at rest and in transit, BAAs signed, SOC 2 Type II available.", "status": "addressed" },
+        { "objection": "Lengthy security questionnaire required before approval.", "response": "Committed to a one-week turnaround with Meera as owner.", "status": "open" }
+      ],
+      "buyingSignals": [
+        { "signal": "James asked how quickly a pilot could start and named a specific clinic.", "strength": "strong" },
+        { "signal": "James mentioned eleven more clinics if the pilot works.", "strength": "strong" },
+        { "signal": "Lena said 'good' after hearing the compliance answers.", "strength": "moderate" }
+      ],
+      "nextSteps": [
+        "Return the security questionnaire within one week.",
+        "Send a pilot proposal for the downtown clinic with a success-criteria section.",
+        "Book a security review call with Lena once the questionnaire is in."
+      ],
+      "dealStage": "Evaluation",
+      "sentiment": { "score": 82, "label": "Very positive", "reason": "Champion is eager to pilot; remaining blocker is a standard security process." },
+      "followUpEmail": {
+        "subject": "Kestrel Health: security documents and pilot next steps",
+        "body": "Hi James and Lena,\n\nThank you for the time today. James, it was great to see how closely the urgent-routing workflow matched your team's needs.\n\nLena, I've sent our SOC 2 Type II report and standard BAA. Meera is working on your security questionnaire and we'll return it within a week.\n\nIn parallel I'll draft a pilot plan for the downtown clinic so we're ready to move once security signs off.\n\nBest,\nRohan"
+      }
+    },
+    "createdAt": "2026-10-15T09:30:00.000Z",
+    "processedAt": "2026-10-15T09:33:00.000Z"
+  },
+  {
+    "id": "sample-aster-checkin",
+    "sample": true,
+    "title": "Quarterly check-in",
+    "account": "Aster Media",
+    "date": "2026-10-22T11:00:00.000Z",
+    "durationMin": 26,
+    "participants": [
+      { "name": "Rohan Mehta" },
+      { "name": "Kavya Nair" },
+      { "name": "Ben Carter" }
+    ],
+    "source": "sample",
+    "status": "pending",
+    "transcript": [
+      { "speaker": "Rohan Mehta", "start": 3, "text": "Thanks both. I wanted to check how the rollout is going and what's coming up next quarter." },
+      { "speaker": "Kavya Nair", "start": 12, "text": "Overall good. The content team adopted it quickly. The ad sales team is slower, they still forward requests by email." },
+      { "speaker": "Ben Carter", "start": 29, "text": "Part of that is the mobile app. Our sales reps are on the road and the approval screen is awkward on a phone." },
+      { "speaker": "Rohan Mehta", "start": 42, "text": "That's useful. Our new mobile approvals release is out next month. I can get you early access." },
+      { "speaker": "Kavya Nair", "start": 55, "text": "Please. Also, we're opening a new office in Singapore in January, about forty people. We'd want them on it from day one." },
+      { "speaker": "Rohan Mehta", "start": 70, "text": "Congratulations. Do you need data stored in the region for that office?" },
+      { "speaker": "Ben Carter", "start": 78, "text": "Probably yes, legal is checking. We also need to know if pricing changes at that seat count." },
+      { "speaker": "Rohan Mehta", "start": 90, "text": "Adding forty seats moves you into the next volume tier, so your per-seat price would actually drop. I'll send numbers." },
+      { "speaker": "Kavya Nair", "start": 1540, "text": "Great. Send that and the early-access details, and let's regroup in two weeks." }
+    ],
+    "insights": null,
+    "createdAt": "2026-10-22T11:40:00.000Z"
+  }
+]

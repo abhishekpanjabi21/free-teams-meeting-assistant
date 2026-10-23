@@ -1,0 +1,12 @@
+# Secrets
+.env
+
+# Your meetings and transcripts (kept on your Mac, never committed)
+data/
+
+# System files
+.DS_Store
+node_modules/
+
+# Whisper model files (large downloads)
+models/
